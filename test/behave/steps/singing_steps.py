@@ -43,7 +43,7 @@ def wait_for_service_message(context, message_type):
 
 
 @given('mycroft is singing')
-def given_news_playing(context):
+def given_is_singing(context):
     emit_utterance(context.bus, "sing a song")
     wait_for_service_message(context, 'play')
     time.sleep(3)
